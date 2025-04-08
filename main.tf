@@ -16,7 +16,7 @@ resource "aws_s3_bucket_versioning" "nike-bucket-versioning-status" {
 }
 
 //dynamodb table to lock/unlock resources.
-
+/*
 resource "aws_dynamodb_table" "terraform_locks" {
   name = "terraform-locks"
   hash_key = "LockID"
@@ -26,3 +26,4 @@ resource "aws_dynamodb_table" "terraform_locks" {
     type = "S"
   }
 }
+*/
