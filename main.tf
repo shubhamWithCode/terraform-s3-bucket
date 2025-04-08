@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "nike-main-bucket" {
   bucket = "nike-terraform-tfstate-file-bucket"
+  force_destroy = true # This automatically empties the bucket on destroy
   tags = {
     Name = "nike-main-bucket"
     Env = "Dev"
